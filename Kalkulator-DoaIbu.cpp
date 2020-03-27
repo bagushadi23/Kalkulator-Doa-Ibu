@@ -12,16 +12,30 @@ void penjumlahan(){
 	cin >>bilanganb;
 	cout <<"Hasil :"<<bilangana+bilanganb;
 	}
+void pembagian(){
+	cout << "Masukkan angka yang mau dibagi : ";
+	cin >> bilangana;
+	cout << "Masukkan angka pembagi : ";
+	cin >> bilanganb;
+	cout << "Hasil : "<<bilangana/bilanganb;
+	}
+
 }a;
+
 int main(){
 	int pilihan;
 	cout <<"1. Penjumlahan"<<endl;
 	cout <<"2. Perkalian"<<endl;
 	cout <<"3. Pembagian"<<endl;
+	cout <<"Pilih Metode :";
 	cin >>pilihan;
 	switch (pilihan){
 		case 1:{
 			a.penjumlahan();
+			break;
+		}
+		case 3:{
+			a.pembagian();
 			break;
 		}
 	}
