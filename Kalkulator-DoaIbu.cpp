@@ -19,6 +19,13 @@ void pembagian(){
 	cin >> bilanganb;
 	cout << "Hasil : "<<bilangana/bilanganb;
 	}
+void pengurangan(){
+	cout <<"Masukkan bilangan : ";
+	cin >>bilangana;
+	cout <<"Masukkan bilangan : ";
+	cin >>bilanganb;
+	cout << "hasil pengurangan : "<<bilangana-bilanganb;
+	}
 
 }a;
 
@@ -27,6 +34,7 @@ int main(){
 	cout <<"1. Penjumlahan"<<endl;
 	cout <<"2. Perkalian"<<endl;
 	cout <<"3. Pembagian"<<endl;
+	cout <<"4. Pengurangan"<<endl;
 	cout <<"Pilih Metode :";
 	cin >>pilihan;
 	switch (pilihan){
@@ -36,6 +44,10 @@ int main(){
 		}
 		case 3:{
 			a.pembagian();
+			break;
+		}
+		case 4:{
+			a.pengurangan();
 			break;
 		}
 	}
