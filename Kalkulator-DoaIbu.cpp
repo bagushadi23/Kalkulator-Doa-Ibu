@@ -12,6 +12,19 @@ void penjumlahan(){
 	cin >>bilanganb;
 	cout <<"Hasil :"<<bilangana+bilanganb;
 	}
+void perkalian(){
+	int a,b;
+	
+	cout<<"Masukan Angka Pertama : ";
+	cin>>a;
+	cout<<"Masukan Angka Kedua : ";
+	cin>>b;
+	
+	cout<<"Hasil : "<<a*b;
+}
+	
+	
+
 void pembagian(){
 	cout << "Masukkan angka yang mau dibagi : ";
 	cin >> bilangana;
@@ -42,6 +55,12 @@ int main(){
 			a.penjumlahan();
 			break;
 		}
+		
+		case 2:{
+			a.perkalian();
+			break;
+		}
+			
 		case 3:{
 			a.pembagian();
 			break;
